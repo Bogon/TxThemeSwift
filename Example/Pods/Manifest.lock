@@ -1,0 +1,16 @@
+PODS:
+  - TxThemeSwift (1.0.1)
+
+DEPENDENCIES:
+  - TxThemeSwift (from `../`)
+
+EXTERNAL SOURCES:
+  TxThemeSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TxThemeSwift: 0658282ef3794d48cf0bc7a84c6e07c3410c924d
+
+PODFILE CHECKSUM: e4521d16620ec490cdf75790f1ea35b347361a79
+
+COCOAPODS: 1.16.2

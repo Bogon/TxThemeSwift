@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'TxThemeSwift_Example' do
+  pod 'TxThemeSwift', :path => '../'
+
+  target 'TxThemeSwift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

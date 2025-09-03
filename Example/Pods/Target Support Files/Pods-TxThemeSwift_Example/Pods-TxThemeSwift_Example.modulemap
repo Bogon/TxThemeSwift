@@ -1,0 +1,6 @@
+framework module Pods_TxThemeSwift_Example {
+  umbrella header "Pods-TxThemeSwift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
