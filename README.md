@@ -27,3 +27,16 @@ bogonchar, zhangqixcu@gmail.com
 ## License
 
 TxThemeSwift is available under the MIT license. See the LICENSE file for more info.
+
+
+pod lib lint TxThemeSwift.podspec --allow-warnings
+
+git add .
+git commit -m "release 1.0.1"
+git tag 1.0.1
+
+git push origin main --tags
+
+pod trunk push TxThemeSwift.podspec --allow-warnings
+
+pod repo update --verbose

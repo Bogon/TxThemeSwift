@@ -22,18 +22,13 @@ extension ThemeManager {
     public class func imageElement(for array: [String]) -> UIImage? {
         guard let imageName = element(for: array) else { return nil }
         
-        if ThemeManager.currentBundle.isEmpty {
-            // 主工程兜底
-            if let image = UIImage(named: imageName) {
-                return image
-            }
-        } else {
-            let bundle = Bundle(for: self)
-            guard let resourceBundleURL = bundle.url(forResource: ThemeManager.currentBundle, withExtension: "bundle"),
-                  let resourceBundle = Bundle(url: resourceBundleURL) else {
-                return nil
-            }
-            return UIImage(named: imageName, in: resourceBundle, compatibleWith: nil)
+        if let b = ThemeManager.currentBundle,
+           let image = UIImage(named: imageName, in: b, compatibleWith: nil) {
+            return image
+        }
+        
+        if let image = UIImage(named: imageName) {
+            return image
         }
         return nil
     }
