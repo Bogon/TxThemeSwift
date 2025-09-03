@@ -33,7 +33,7 @@ pod lib lint TxThemeSwift.podspec --allow-warnings
 
 git add .
 git commit -m "release 1.1.0"
-git tag 1.0.2
+git tag 1.1.0
 
 git push origin main --tags
 
