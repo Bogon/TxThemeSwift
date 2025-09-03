@@ -32,8 +32,8 @@ TxThemeSwift is available under the MIT license. See the LICENSE file for more i
 pod lib lint TxThemeSwift.podspec --allow-warnings
 
 git add .
-git commit -m "release 1.0.1"
-git tag 1.0.1
+git commit -m "release 1.1.0"
+git tag 1.0.2
 
 git push origin main --tags
 

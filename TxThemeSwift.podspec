@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TxThemeSwift'
-  s.version          = '1.0.2'
+  s.version          = '1.1.0'
   s.summary          = 'TxThemeSwift 是一个使用 Swift 编写的 App 一键切换肤工具类库.'
 
 # This description is used to generate tags and improve search results.
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   TxThemeSwift 是一个使用 Swift 编写的 App 一键切换肤工具类库. 你可以很简单的使用它，不仅支持从主工程加载图片，也支持从 第三方类库中加载。
                        DESC
 
-  s.homepage         = 'https://github.com/bogonchar/TxThemeSwift'
+  s.homepage         = 'https://github.com/Bogon/TxThemeSwift.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'bogonchar' => 'zhangqixcu@gmail.com' }
