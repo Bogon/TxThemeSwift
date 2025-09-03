@@ -53,6 +53,7 @@ public enum ThemePath {
     @objc public fileprivate(set) static var currentThemeIndex: Int = 0
     // 为空表示 main bundle，不为空则表示获取到 framework bundle
     @objc public static var currentBundle: Bundle?
+    @objc public static var currentFramework: String?
     
     public fileprivate(set) static var currentThemePath: ThemePath?
 

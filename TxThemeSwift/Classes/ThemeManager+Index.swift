@@ -22,8 +22,9 @@ extension ThemeManager {
     public class func imageElement(for array: [String]) -> UIImage? {
         guard let imageName = element(for: array) else { return nil }
         
-        if let b = ThemeManager.currentBundle,
-           let image = UIImage(named: imageName, in: b, compatibleWith: nil) {
+        if let b = ThemeManager.currentBundle, let resourceBundleURL = b.url(forResource: ThemeManager.currentFramework, withExtension: "bundle"),
+           let resourceBundle = Bundle(url: resourceBundleURL),
+           let image = UIImage(named: imageName, in: resourceBundle, compatibleWith: nil) {
             return image
         }
         

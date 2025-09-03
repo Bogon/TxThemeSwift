@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TxThemeSwift'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'TxThemeSwift 是一个使用 Swift 编写的 App 一键切换肤工具类库.'
 
 # This description is used to generate tags and improve search results.
